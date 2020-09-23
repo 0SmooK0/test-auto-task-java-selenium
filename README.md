@@ -11,7 +11,7 @@ This frameowrk is built with the intention to fulfill a test automation task ass
 ### RUNNING TESTS:
   - In terminal run:
 ```sh
-        maven clean test
+        mvn clean test
 ```
 For the purpose of this framework, before mentioned command is enough however if you are interested in other Maven commands, take a look at:
 https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
