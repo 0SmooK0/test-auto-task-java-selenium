@@ -6,6 +6,7 @@ This frameowrk is built with the intention to fulfill a test automation task ass
 ### PREREQUISITES:
 
  - JDK (Author is running JDK 8),
+-- when installing JDK, make sure to point your JAVA_HOME variable to the JDK rather than JRE that it tries to point to by default.
  - Maven (Author is using 3.6.3)
 
 ### RUNNING TESTS:
