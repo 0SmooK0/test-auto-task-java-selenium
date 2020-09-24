@@ -36,6 +36,8 @@ public class TestDefinitions {
 
   @When("user navigates to {string} and submenu {string}")
   public void user_navigates_to_menu(String menu, String submenu) throws Throwable {
+    WebDriverWait wait = new WebDriverWait(driver, 10);
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(menu)));
     Actions action = new Actions(driver);
     WebElement we = driver.findElement(By.linkText(menu));
     action.moveToElement(we).perform();
@@ -44,6 +46,8 @@ public class TestDefinitions {
 
   @When("user navigates to {string}")
   public void user_clicks_link(String link) throws Throwable {
+    WebDriverWait wait = new WebDriverWait(driver, 10);
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(link)));
     driver.findElement(By.linkText(link)).click();
   }
 
